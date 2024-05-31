@@ -152,7 +152,6 @@ struct ProgressBar: View {
                 .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round, lineJoin: .round))
                 .foregroundColor(Color(UIColor.systemGreen))
                 .rotationEffect(Angle(degrees: 270.0))
-                .animation(.linear)
 
             Text(String(format: "%.0f %%", min(self.progress, 1.0)*100.0))
                 .font(font)

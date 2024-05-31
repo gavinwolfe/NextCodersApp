@@ -29,13 +29,7 @@ struct ContentView: View {
     
     var loginContent: some View {
         ZStack {
-            
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .foregroundStyle(.linearGradient(colors: [.green, .cyan], startPoint: .topLeading, endPoint: .bottomTrailing))
-                .frame(width: 1000, height: 460)
-                .rotationEffect(.degrees(160))
-                .offset(y: -450)
-            
+            SlashView()
             VStack(spacing: 20) {
                 Spacer()
                     .frame(height: 400)
@@ -45,43 +39,25 @@ struct ContentView: View {
                     .offset(x: -50, y: -220)
                 Spacer()
                     .frame(height: 200)
-                TextField("Login Code", text: $accessCode, prompt: Text("Enter Login Code Here...")
+                TextField("Login Code", text: $accessCode, prompt:
+                            Text("Enter Login Code Here...")
                     .foregroundColor(.gray))
                 .foregroundColor(.black)
-                   
-                    
                 Rectangle()
                     .frame(width: 350, height: 1)
                     .foregroundColor(.black)
-                
-                
                 Button {
-                    guard accessCode != "" else {
-                        return
-                    }
-                    if accessCode.lowercased().contains("instructor") {
-                        loginRequest(instructorCode: accessCode.lowercased())
-                    } else if accessCode.lowercased().contains("parent") {
-                        loginRequest(parentId: accessCode.lowercased())
-                    } else {
-                        loginRequest(classCode: accessCode.lowercased())
-                    }
+                    loginAction()
                 } label: {
-                    Text("Go!")
-                        .bold()
-                        .frame(width: 200, height: 40)
-                        .background(RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(.linearGradient(colors: [.blue, .cyan], startPoint: .top, endPoint: .bottomTrailing)))
-                        .foregroundColor(.white)
+                    LoginButtonText()
                 }.offset(y: 10)
                 Spacer()
                 Button {
-                    
+                    //handle help
                 } label: {
                     Text("Click here for help logging in...")
                 }.offset(y: -20)
             }
-            .frame(width: 350)
             .onAppear {
                 //handle any on appear settings
             }
@@ -131,7 +107,7 @@ struct ContentView: View {
         ref.child("addCodes").child(classCode).observeSingleEvent(of: .value, with: { snap in
             if let classesOfStudent = snap.value as? [String: String] {
                 Auth.auth().signInAnonymously() { (authResult, error) in
-                    if var nameOfStudent = classesOfStudent.values.first, nameOfStudent != "", let uid = authResult?.user.uid {
+                    if let nameOfStudent = classesOfStudent.values.first, nameOfStudent != "", let uid = authResult?.user.uid {
                         ref.child("users").child(uid).updateChildValues(["name": nameOfStudent])
                         var studentRefData = [String: String]()
                         for (classid, _) in classesOfStudent {
@@ -145,8 +121,42 @@ struct ContentView: View {
             }
         })
     }
+    func loginAction() {
+        guard accessCode != "" else {
+            return
+        }
+        if accessCode.lowercased().contains("instructor") {
+            loginRequest(instructorCode: accessCode.lowercased())
+        } else if accessCode.lowercased().contains("parent") {
+            loginRequest(parentId: accessCode.lowercased())
+        } else {
+            loginRequest(classCode: accessCode.lowercased())
+        }
+    }
 }
 
+struct SlashView: View {
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 20, style: .continuous)
+            .foregroundStyle(.linearGradient(colors: [.green, .cyan], startPoint: .topLeading, endPoint: .bottomTrailing))
+            .frame(width: 1000, height: 460)
+            .rotationEffect(.degrees(160))
+            .offset(y: -450)
+    }
+}
+
+struct LoginButtonText: View {
+    
+    var body: some View {
+        Text("Go!")
+            .bold()
+            .frame(width: 200, height: 40)
+            .background(RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .fill(.linearGradient(colors: [.blue, .cyan], startPoint: .top, endPoint: .bottomTrailing)))
+            .foregroundColor(.white)
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
