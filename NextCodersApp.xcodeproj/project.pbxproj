@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4265EB72BE21E6500C7F9C6 /* CoursePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4265EB62BE21E6400C7F9C6 /* CoursePage.swift */; };
+		F4265EB92BE221D700C7F9C6 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4265EB82BE221D700C7F9C6 /* TransitionManager.swift */; };
+		F4265EF62BE5A38000C7F9C6 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4265EF52BE5A38000C7F9C6 /* ProjectView.swift */; };
+		F4265EF82BE6E9FC00C7F9C6 /* InstructorHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4265EF72BE6E9FC00C7F9C6 /* InstructorHub.swift */; };
+		F4265EFA2BE6EA4200C7F9C6 /* ParentHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4265EF92BE6EA4200C7F9C6 /* ParentHub.swift */; };
+		F4265EFC2BEABF6B00C7F9C6 /* ParentCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4265EFB2BEABF6A00C7F9C6 /* ParentCourseView.swift */; };
+		F4265EFE2BEE80ED00C7F9C6 /* NextCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4265EFD2BEE80EC00C7F9C6 /* NextCourses.swift */; };
+		F49C658C2BD31A2E00173F73 /* NextCodersAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C658B2BD31A2E00173F73 /* NextCodersAppApp.swift */; };
+		F49C658E2BD31A2E00173F73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C658D2BD31A2E00173F73 /* ContentView.swift */; };
+		F49C65902BD31A3200173F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49C658F2BD31A3200173F73 /* Assets.xcassets */; };
+		F49C65932BD31A3200173F73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49C65922BD31A3200173F73 /* Preview Assets.xcassets */; };
+		F49C65952BD31A3200173F73 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C65942BD31A3200173F73 /* Persistence.swift */; };
+		F49C65982BD31A3200173F73 /* NextCodersApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F49C65962BD31A3200173F73 /* NextCodersApp.xcdatamodeld */; };
+		F49C65A22BD31A3200173F73 /* NextCodersAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C65A12BD31A3200173F73 /* NextCodersAppTests.swift */; };
+		F49C65AC2BD31A3200173F73 /* NextCodersAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C65AB2BD31A3200173F73 /* NextCodersAppUITests.swift */; };
+		F49C65AE2BD31A3200173F73 /* NextCodersAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C65AD2BD31A3200173F73 /* NextCodersAppUITestsLaunchTests.swift */; };
+		F49C65BC2BD84DA400173F73 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F49C65BB2BD84DA400173F73 /* FirebaseAnalytics */; };
+		F49C65BE2BD84DA400173F73 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F49C65BD2BD84DA400173F73 /* FirebaseAuth */; };
+		F49C65C02BD84DA400173F73 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F49C65BF2BD84DA400173F73 /* FirebaseDatabase */; };
+		F49C65C22BD84DA400173F73 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = F49C65C12BD84DA400173F73 /* FirebaseFunctions */; };
+		F49C65C42BD84DA400173F73 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F49C65C32BD84DA400173F73 /* FirebaseStorage */; };
+		F49C65C62BD84E8400173F73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F49C65C52BD84E8400173F73 /* GoogleService-Info.plist */; };
+		F49C65C82BD8607600173F73 /* HomeHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C65C72BD8607600173F73 /* HomeHub.swift */; };
+		F49C65CA2BDC311B00173F73 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49C65C92BDC311B00173F73 /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F49C659E2BD31A3200173F73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49C65802BD31A2E00173F73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49C65872BD31A2E00173F73;
+			remoteInfo = NextCodersApp;
+		};
+		F49C65A82BD31A3200173F73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F49C65802BD31A2E00173F73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F49C65872BD31A2E00173F73;
+			remoteInfo = NextCodersApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4265EB62BE21E6400C7F9C6 /* CoursePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePage.swift; sourceTree = "<group>"; };
+		F4265EB82BE221D700C7F9C6 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		F4265EF52BE5A38000C7F9C6 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		F4265EF72BE6E9FC00C7F9C6 /* InstructorHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorHub.swift; sourceTree = "<group>"; };
+		F4265EF92BE6EA4200C7F9C6 /* ParentHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHub.swift; sourceTree = "<group>"; };
+		F4265EFB2BEABF6A00C7F9C6 /* ParentCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCourseView.swift; sourceTree = "<group>"; };
+		F4265EFD2BEE80EC00C7F9C6 /* NextCourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCourses.swift; sourceTree = "<group>"; };
+		F49C65882BD31A2E00173F73 /* NextCodersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextCodersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49C658B2BD31A2E00173F73 /* NextCodersAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCodersAppApp.swift; sourceTree = "<group>"; };
+		F49C658D2BD31A2E00173F73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F49C658F2BD31A3200173F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F49C65922BD31A3200173F73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F49C65942BD31A3200173F73 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F49C65972BD31A3200173F73 /* NextCodersApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NextCodersApp.xcdatamodel; sourceTree = "<group>"; };
+		F49C659D2BD31A3200173F73 /* NextCodersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextCodersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49C65A12BD31A3200173F73 /* NextCodersAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCodersAppTests.swift; sourceTree = "<group>"; };
+		F49C65A72BD31A3200173F73 /* NextCodersAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextCodersAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49C65AB2BD31A3200173F73 /* NextCodersAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCodersAppUITests.swift; sourceTree = "<group>"; };
+		F49C65AD2BD31A3200173F73 /* NextCodersAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCodersAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F49C65C52BD84E8400173F73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../nextCodersInfoPLISTFirebase/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F49C65C72BD8607600173F73 /* HomeHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHub.swift; sourceTree = "<group>"; };
+		F49C65C92BDC311B00173F73 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49C65852BD31A2E00173F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49C65C02BD84DA400173F73 /* FirebaseDatabase in Frameworks */,
+				F49C65BC2BD84DA400173F73 /* FirebaseAnalytics in Frameworks */,
+				F49C65BE2BD84DA400173F73 /* FirebaseAuth in Frameworks */,
+				F49C65C42BD84DA400173F73 /* FirebaseStorage in Frameworks */,
+				F49C65C22BD84DA400173F73 /* FirebaseFunctions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49C659A2BD31A3200173F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49C65A42BD31A3200173F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F49C657F2BD31A2E00173F73 = {
+			isa = PBXGroup;
+			children = (
+				F49C658A2BD31A2E00173F73 /* NextCodersApp */,
+				F49C65A02BD31A3200173F73 /* NextCodersAppTests */,
+				F49C65AA2BD31A3200173F73 /* NextCodersAppUITests */,
+				F49C65892BD31A2E00173F73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F49C65892BD31A2E00173F73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49C65882BD31A2E00173F73 /* NextCodersApp.app */,
+				F49C659D2BD31A3200173F73 /* NextCodersAppTests.xctest */,
+				F49C65A72BD31A3200173F73 /* NextCodersAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49C658A2BD31A2E00173F73 /* NextCodersApp */ = {
+			isa = PBXGroup;
+			children = (
+				F49C65C52BD84E8400173F73 /* GoogleService-Info.plist */,
+				F49C658B2BD31A2E00173F73 /* NextCodersAppApp.swift */,
+				F49C65C72BD8607600173F73 /* HomeHub.swift */,
+				F4265EB62BE21E6400C7F9C6 /* CoursePage.swift */,
+				F4265EF72BE6E9FC00C7F9C6 /* InstructorHub.swift */,
+				F4265EF92BE6EA4200C7F9C6 /* ParentHub.swift */,
+				F49C65C92BDC311B00173F73 /* NetworkManager.swift */,
+				F4265EF52BE5A38000C7F9C6 /* ProjectView.swift */,
+				F49C658D2BD31A2E00173F73 /* ContentView.swift */,
+				F4265EB82BE221D700C7F9C6 /* TransitionManager.swift */,
+				F4265EFB2BEABF6A00C7F9C6 /* ParentCourseView.swift */,
+				F4265EFD2BEE80EC00C7F9C6 /* NextCourses.swift */,
+				F49C658F2BD31A3200173F73 /* Assets.xcassets */,
+				F49C65942BD31A3200173F73 /* Persistence.swift */,
+				F49C65962BD31A3200173F73 /* NextCodersApp.xcdatamodeld */,
+				F49C65912BD31A3200173F73 /* Preview Content */,
+			);
+			path = NextCodersApp;
+			sourceTree = "<group>";
+		};
+		F49C65912BD31A3200173F73 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F49C65922BD31A3200173F73 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F49C65A02BD31A3200173F73 /* NextCodersAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F49C65A12BD31A3200173F73 /* NextCodersAppTests.swift */,
+			);
+			path = NextCodersAppTests;
+			sourceTree = "<group>";
+		};
+		F49C65AA2BD31A3200173F73 /* NextCodersAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F49C65AB2BD31A3200173F73 /* NextCodersAppUITests.swift */,
+				F49C65AD2BD31A3200173F73 /* NextCodersAppUITestsLaunchTests.swift */,
+			);
+			path = NextCodersAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F49C65872BD31A2E00173F73 /* NextCodersApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49C65B12BD31A3200173F73 /* Build configuration list for PBXNativeTarget "NextCodersApp" */;
+			buildPhases = (
+				F49C65842BD31A2E00173F73 /* Sources */,
+				F49C65852BD31A2E00173F73 /* Frameworks */,
+				F49C65862BD31A2E00173F73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextCodersApp;
+			packageProductDependencies = (
+				F49C65BB2BD84DA400173F73 /* FirebaseAnalytics */,
+				F49C65BD2BD84DA400173F73 /* FirebaseAuth */,
+				F49C65BF2BD84DA400173F73 /* FirebaseDatabase */,
+				F49C65C12BD84DA400173F73 /* FirebaseFunctions */,
+				F49C65C32BD84DA400173F73 /* FirebaseStorage */,
+			);
+			productName = NextCodersApp;
+			productReference = F49C65882BD31A2E00173F73 /* NextCodersApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F49C659C2BD31A3200173F73 /* NextCodersAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49C65B42BD31A3200173F73 /* Build configuration list for PBXNativeTarget "NextCodersAppTests" */;
+			buildPhases = (
+				F49C65992BD31A3200173F73 /* Sources */,
+				F49C659A2BD31A3200173F73 /* Frameworks */,
+				F49C659B2BD31A3200173F73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49C659F2BD31A3200173F73 /* PBXTargetDependency */,
+			);
+			name = NextCodersAppTests;
+			productName = NextCodersAppTests;
+			productReference = F49C659D2BD31A3200173F73 /* NextCodersAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F49C65A62BD31A3200173F73 /* NextCodersAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49C65B72BD31A3200173F73 /* Build configuration list for PBXNativeTarget "NextCodersAppUITests" */;
+			buildPhases = (
+				F49C65A32BD31A3200173F73 /* Sources */,
+				F49C65A42BD31A3200173F73 /* Frameworks */,
+				F49C65A52BD31A3200173F73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F49C65A92BD31A3200173F73 /* PBXTargetDependency */,
+			);
+			name = NextCodersAppUITests;
+			productName = NextCodersAppUITests;
+			productReference = F49C65A72BD31A3200173F73 /* NextCodersAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F49C65802BD31A2E00173F73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F49C65872BD31A2E00173F73 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F49C659C2BD31A3200173F73 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F49C65872BD31A2E00173F73;
+					};
+					F49C65A62BD31A3200173F73 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F49C65872BD31A2E00173F73;
+					};
+				};
+			};
+			buildConfigurationList = F49C65832BD31A2E00173F73 /* Build configuration list for PBXProject "NextCodersApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F49C657F2BD31A2E00173F73;
+			packageReferences = (
+				F49C65BA2BD84DA300173F73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F49C65892BD31A2E00173F73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F49C65872BD31A2E00173F73 /* NextCodersApp */,
+				F49C659C2BD31A3200173F73 /* NextCodersAppTests */,
+				F49C65A62BD31A3200173F73 /* NextCodersAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F49C65862BD31A2E00173F73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49C65932BD31A3200173F73 /* Preview Assets.xcassets in Resources */,
+				F49C65902BD31A3200173F73 /* Assets.xcassets in Resources */,
+				F49C65C62BD84E8400173F73 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49C659B2BD31A3200173F73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49C65A52BD31A3200173F73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49C65842BD31A2E00173F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4265EB92BE221D700C7F9C6 /* TransitionManager.swift in Sources */,
+				F49C65952BD31A3200173F73 /* Persistence.swift in Sources */,
+				F4265EF82BE6E9FC00C7F9C6 /* InstructorHub.swift in Sources */,
+				F4265EFE2BEE80ED00C7F9C6 /* NextCourses.swift in Sources */,
+				F49C658E2BD31A2E00173F73 /* ContentView.swift in Sources */,
+				F49C65982BD31A3200173F73 /* NextCodersApp.xcdatamodeld in Sources */,
+				F4265EFA2BE6EA4200C7F9C6 /* ParentHub.swift in Sources */,
+				F49C65CA2BDC311B00173F73 /* NetworkManager.swift in Sources */,
+				F4265EFC2BEABF6B00C7F9C6 /* ParentCourseView.swift in Sources */,
+				F4265EB72BE21E6500C7F9C6 /* CoursePage.swift in Sources */,
+				F4265EF62BE5A38000C7F9C6 /* ProjectView.swift in Sources */,
+				F49C658C2BD31A2E00173F73 /* NextCodersAppApp.swift in Sources */,
+				F49C65C82BD8607600173F73 /* HomeHub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49C65992BD31A3200173F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49C65A22BD31A3200173F73 /* NextCodersAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49C65A32BD31A3200173F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49C65AC2BD31A3200173F73 /* NextCodersAppUITests.swift in Sources */,
+				F49C65AE2BD31A3200173F73 /* NextCodersAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F49C659F2BD31A3200173F73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49C65872BD31A2E00173F73 /* NextCodersApp */;
+			targetProxy = F49C659E2BD31A3200173F73 /* PBXContainerItemProxy */;
+		};
+		F49C65A92BD31A3200173F73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F49C65872BD31A2E00173F73 /* NextCodersApp */;
+			targetProxy = F49C65A82BD31A3200173F73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F49C65AF2BD31A3200173F73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F49C65B02BD31A3200173F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F49C65B22BD31A3200173F73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NextCodersApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8WY239C4VN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Next Coders";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = berlarkSoftware.NextCodersApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F49C65B32BD31A3200173F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NextCodersApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8WY239C4VN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Next Coders";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = berlarkSoftware.NextCodersApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F49C65B52BD31A3200173F73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WY239C4VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = berlarkSoftware.NextCodersAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextCodersApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NextCodersApp";
+			};
+			name = Debug;
+		};
+		F49C65B62BD31A3200173F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WY239C4VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = berlarkSoftware.NextCodersAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextCodersApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NextCodersApp";
+			};
+			name = Release;
+		};
+		F49C65B82BD31A3200173F73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WY239C4VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = berlarkSoftware.NextCodersAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NextCodersApp;
+			};
+			name = Debug;
+		};
+		F49C65B92BD31A3200173F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WY239C4VN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = berlarkSoftware.NextCodersAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NextCodersApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49C65832BD31A2E00173F73 /* Build configuration list for PBXProject "NextCodersApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49C65AF2BD31A3200173F73 /* Debug */,
+				F49C65B02BD31A3200173F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49C65B12BD31A3200173F73 /* Build configuration list for PBXNativeTarget "NextCodersApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49C65B22BD31A3200173F73 /* Debug */,
+				F49C65B32BD31A3200173F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49C65B42BD31A3200173F73 /* Build configuration list for PBXNativeTarget "NextCodersAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49C65B52BD31A3200173F73 /* Debug */,
+				F49C65B62BD31A3200173F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49C65B72BD31A3200173F73 /* Build configuration list for PBXNativeTarget "NextCodersAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49C65B82BD31A3200173F73 /* Debug */,
+				F49C65B92BD31A3200173F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F49C65BA2BD84DA300173F73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F49C65BB2BD84DA400173F73 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49C65BA2BD84DA300173F73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F49C65BD2BD84DA400173F73 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49C65BA2BD84DA300173F73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F49C65BF2BD84DA400173F73 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49C65BA2BD84DA300173F73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F49C65C12BD84DA400173F73 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49C65BA2BD84DA300173F73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		F49C65C32BD84DA400173F73 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49C65BA2BD84DA300173F73 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F49C65962BD31A3200173F73 /* NextCodersApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F49C65972BD31A3200173F73 /* NextCodersApp.xcdatamodel */,
+			);
+			currentVersion = F49C65972BD31A3200173F73 /* NextCodersApp.xcdatamodel */;
+			path = NextCodersApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F49C65802BD31A2E00173F73 /* Project object */;
+}
